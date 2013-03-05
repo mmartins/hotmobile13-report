@@ -1,0 +1,58 @@
+\documentclass[twocolumn,11pt,twoside]{article}
+
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{subfigure}
+\usepackage{comment}
+\usepackage[american]{babel}
+\usepackage{url}
+\usepackage{MC2R}
+
+\usepackage[pdftex]{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    pdfstartview=FitH,
+    pdftitle={Here is the MC2R Title}
+    pdfauthor={Fill this}}
+
+
+\begin{document}
+
+\title{Here is the MC2R Title
+{\normalfont\thanks{This work is completely alpha.  Please, take it as it is.}}}
+
+\author{
+\begin{tabular}{p{2in} p{1in} p{2in}}
+\multicolumn{1}{c}{\textbf{Author Name Number one$^{a}$}} & & 
+\multicolumn{1}{c}{\textbf{Author Number Two$^{b}$}} \\
+\multicolumn{1}{c}{\textit{author@university.org}} & & 
+\multicolumn{1}{c}{\textit{author2@company.com}}
+\end{tabular}\\
+$^{a}$ECE Department, University, City, State, Country\\
+$^{b}$A Big Company, City, State, Country\\
+\\
+\parbox{5.5in}{\textit{
+This is the abstact of the example paper.
+This is the abstact of the example paper.
+This is the abstact of the example paper.
+This is the abstact of the example paper.
+This is the abstact of the example paper.
+This is the abstact of the example paper.}}
+}
+
+\maketitle
+\thispagestyle{fancy}
+\normalfont
+
+\input{intro}
+% Add other sections as necessary
+%\input{other_sections}
+
+\bibliographystyle{abbrv}
+\bibliography{hotmobile13-report}
+
+\end{document}
+
