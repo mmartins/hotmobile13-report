@@ -1,0 +1,47 @@
+\section{Understanding Humans}
+\label{sec:session3_humans}
+
+This session opened with Xuan Bao of Duke University presenting ``The
+Case for Psychological Computing.'' His team work envisions the pushing
+of psychological factors into deeper stacks of system design to
+intimately understand human needs and design better computing solutions.
+This novel system models psychological attributes as inherent nature
+(long-term, fixed values) and states (short-term, context-dependent
+values).  Bao believes that developers can make use of these variables
+to create applications that better meet human properties, such as
+preferential content pre-fetching and vehicle driving with cognitive
+comfort. Remaining challenges include how to model these values
+correctly, and in case of wrong prediction, how to back off graciously.
+
+He Wang, also from Duke, followed with ``Recognizing Humans without Face
+Recognition'', a presentation of the \emph{Insight} system for human
+identification using camera-enabled portable devices in situations where
+Computer Vision cannot be applied to face patterns. Wang found that
+spectogramming applied to cloth colors and waveletting over cloth
+patterns are prominent techniques for recognizing humans using their
+vestments with great accuracy. InSight shares these fingerprints with
+other people's devices to enable social-aware applications.
+
+Shahriar Nirjon, from University of Virgina, presented the last paper of
+the session, ``sMFCC: Exploiting Sparseness in Speech for Fast Acoustic
+Feature Extraction on Mobile Devices -- a Feasibility Study''. Nirjon
+pointed out that current solutions for voice-driven smartphone
+applications must offload the extraction of frequency-domain acoustic
+features to the cloud. This is necessary to guarantee near real-time
+system response, but incurs a high communication cost. sMFCC (sparse
+Mel-Frequency Cepstral Coefficients) exploits the empirically observed
+sparseness of frequency domain in speech to enable fast extraction of
+the same features from high-sampling-rate audio running solely on a
+smartphone. Nirjon built sMFCC on top of recent work on sparse Fast
+Fourier Transform (sFFT) as an efficient approximation of the widely
+used MFCC features on the phone. His proposal achieves an accuracy of up
+to $83.97\%$ on word recognition with expected computation time lower or
+equal to the duration of speech samples.
+
+\remark{
+  \textbf{TODO}:
+  \begin{itemize}
+  \item Need for sFFT reference?
+  \item Add Discussion session.
+  \end{itemize}
+}
