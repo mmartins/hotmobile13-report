@@ -6,16 +6,16 @@ MAINFILE = hotmobile13-report
 
 all: $(MAINFILE).pdf
 
-%.pdf: %.tex %.bib %.blg *.sty  $(TEXFILES) $(BIBFILES)
+%.pdf: %.tex *.bib *.sty  $(TEXFILES) $(BIBFILES)
 	pdflatex $*.tex 
-	bibtex --min-crossrefs=20 $*
+#	bibtex --min-crossrefs=20 $*
 	pdflatex $*.tex
-	pdflatex $*.tex
+#	pdflatex $*.tex
 
-%.blg: %.bib
-	pdflatex $*.tex
-	bibtex --min-crossrefs=20 $*
-	pdflatex $*.tex
+#%.blg: %.bib
+#	pdflatex $*.tex
+#	bibtex --min-crossrefs=20 $*
+#	pdflatex $*.tex
 
 %.toc: %.tex
 	pdflatex $*.tex
