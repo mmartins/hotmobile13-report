@@ -10,49 +10,54 @@
 \usepackage{url}
 \usepackage{MC2R}
 
-\usepackage[pdftex]{hyperref}
+\newcommand{\reporttitle}{
+    Report on the 14th International Workshop on Mobile Computing Systems and Applications (HotMobile 2013)
+}
 
+\usepackage[pdftex]{hyperref}
 \hypersetup{
     colorlinks=true,
     pdfstartview=FitH,
-    pdftitle={Here is the MC2R Title}
-    pdfauthor={Fill this}}
-
+    pdftitle={\reporttitle{}}
+    pdfauthor={Fill this}
+}
 
 \begin{document}
-
-\title{Here is the MC2R Title
-{\normalfont\thanks{This work is completely alpha.  Please, take it as it is.}}}
+\title{\reporttitle{}}
 
 \author{
-\begin{tabular}{p{2in} p{1in} p{2in}}
-\multicolumn{1}{c}{\textbf{Author Name Number one$^{a}$}} & & 
-\multicolumn{1}{c}{\textbf{Author Number Two$^{b}$}} \\
-\multicolumn{1}{c}{\textit{author@university.org}} & & 
-\multicolumn{1}{c}{\textit{author2@company.com}}
-\end{tabular}\\
-$^{a}$ECE Department, University, City, State, Country\\
-$^{b}$A Big Company, City, State, Country\\
-\\
-\parbox{5.5in}{\textit{
-This is the abstact of the example paper.
-This is the abstact of the example paper.
-This is the abstact of the example paper.
-This is the abstact of the example paper.
-This is the abstact of the example paper.
-This is the abstact of the example paper.}}
+    \begin{tabular}{p{2in} p{1in} p{2in}}
+        \multicolumn{1}{c}{\textbf{Author Name Number one$^{a}$}} & & 
+        \multicolumn{1}{c}{\textbf{Author Number Two$^{b}$}} \\
+        \multicolumn{1}{c}{\textit{author@university.org}} & & 
+        \multicolumn{1}{c}{\textit{author2@company.com}}
+    \end{tabular}\\
+    $^{a}$ECE Department, University, City, State, Country\\
+    $^{b}$A Big Company, City, State, Country\\
+    \\
+    %\parbox{5.5in}{
+    %    \textit{This is the abstract of the example paper.}
+    %}
 }
 
 \maketitle
 \thispagestyle{fancy}
 \normalfont
 
-\input{intro}
-% Add other sections as necessary
-%\input{other_sections}
+\input{inputs/intro}
+\input{inputs/keynote}
+\input{inputs/session1_cellbilling}
+\input{inputs/session2_power}
+\input{inputs/session3_humans}
+\input{inputs/session4_sensors}
+\input{inputs/session5_panel}
+\input{inputs/session6_mobilecloud}
+\input{inputs/session7_vehiclenets}
+\input{inputs/postersdemos}
+\input{inputs/keythemes}
+\input{inputs/conclusion}
 
-\bibliographystyle{abbrv}
-\bibliography{hotmobile13-report}
+%\bibliographystyle{abbrv}
+%\bibliography{hotmobile13-report}
 
 \end{document}
-
