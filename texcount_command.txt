@@ -1,0 +1,1 @@
+texcount -inc hotmobile13-report.tex
