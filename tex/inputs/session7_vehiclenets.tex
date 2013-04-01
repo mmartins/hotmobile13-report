@@ -1,3 +1,42 @@
 %!TEX root = ../hotmobile13-report.tex
 \section{Vehicular Networking and Transportation}
 \label{sec:vehiclenets}
+
+The final session, on ``Vehicular Networking and Transportation'' was chaired by 
+Lin Zhong and was opened with a presentation by Tan Zhang (University of 
+Wisconsin Madison), who presented ``Scout: An Asymmetric Vehicular Network Design 
+over TV Whitespaces''. Motivated by an increasing trend towards in-vehicle 
+Internet connectivity (\eg{} for navigation, safety and entertainment), their 
+work provides an architecture for vehicular networking that is designed to 
+provide good coverage and throughput. By leveraging locally available television 
+frequencies (white spaces), a small number of base stations can cover a 
+significant area at low cost (due to their good propagation characteristics).
+Legal restrictions on power transmission suggest an asynchronous design and so 
+the white space is used as a downlink whilst cellular 3G is used for the uplink.
+By using two radios on each vehicle (the target application is a set of 250 city 
+buses), the front (scout) can monitor changing channel characteristics (\eg{} as 
+the vehicle moves behind a building) and inform the base station which can then 
+use optimum parameters for communication with the rear radio. Initial evaluation 
+results indicate that using this architecture can improve base station coverage 
+by 4? coverage improvement and achieve a throughput gain of 1.4?.
+
+The second paper in the session, ``Social Vehicle Navigation: Integrating Shared 
+Driving Experience into Vehicle Navigation'', was presented by Wenjie Sha 
+(Rutgers University). Sha describes their system `NaviTweet', a social vehicle
+navigation application, which allows drivers to post or listen to traffic-related 
+voice tweets grouped in a vehicular social network (VSN, a social network of 
+drivers who travel the same routes or to the same destination). Voice tweets are 
+periodically formed into digests (\eg{} grouped by road segment) by the NaviTweet 
+server. The short audio clips are designed to convey recent, relevant information 
+in such a way as to prevent driver cognitive overload. At the driver's mobile 
+device tweet dig rest are pruned (based on trajectory) and then played (ordered 
+by distance the from driver). Sha and colleagues have a prototype implementation
+using OpenStreetMap for mapping data, Google Map for VSN management and Android 
+speech recognition.
+
+Finally, Blerim Cici (University of California) presented ``Quantifying the 
+Potential of Ride-Sharing using Call Description Records'', work done in 
+partnership with Telefonica Research. In Cici et al's work, the authors attempt 
+to quantify the upper bound on ride-sharing effectiveness. They examine human 
+mobility patterns within the city of Madrid, Spain, using a call description 
+records (CDR) dataset.
