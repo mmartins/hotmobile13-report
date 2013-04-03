@@ -1,35 +1,40 @@
 %!TEX root = ../hotmobile13-report.tex
 \section{Vehicular Networking and Transportation}
 \label{sec:vehiclenets}
-
-The final session, chaired by Lin Zhong, opened with the paper `Scout: An 
+The final session, chaired by Lin Zhong, opened with the paper ``Scout: An 
 Asymmetric Vehicular Network Design over TV Whitespaces'' presented by Tan Zhang 
-(University of Wisconsin Madison).
+(University of Wisconsin-Madison).
 
 Motivated by an increasing trend towards in-vehicle Internet connectivity, Scout 
 provides an architecture for vehicular networking by leveraging locally available 
 television frequencies (whitespaces). Power transmission restrictions suggest an 
-asynchronous design and so whitespace is used as a downlink whilst cellular 3G is 
-used for the uplink. By using two radios on each vehicle, the front (scout) can 
-monitor changing channel characteristics (\eg{} as the vehicle passes behind a 
-building) and inform the base station which can then optimise communication with 
-the rear radio. Initial evaluation indicates that using this architecture can 
-improve base station coverage by 4x and achieve a throughput gain of 1.4x.
+asymmetric design so whitespace is used as a downlink whilst cellular 3G is 
+used for the uplink. Two radios are used per vehicle, the front (scout) 
+monitors changing channel characteristics (\eg{} the vehicle passing behind a 
+building) and informs the base station which then optimises communication with 
+the rear radio. Initial evaluation indicates that Scout can improve coverage by 
+4x and increase throughput by 1.4x.
 
 Wenjie Sha (Rutgers University) then presented ``Social Vehicle Navigation: 
 Integrating Shared Driving Experience into Vehicle Navigation''. Sha described 
 their system `NaviTweet', a social navigation application, which allows drivers 
-to post or listen to traffic-related voice tweets grouped in a vehicular social 
+to post or listen to voice tweets grouped by vehicular social 
 network (VSN, a social network of drivers who travel the same routes or to the 
-same destination). Voice tweets are periodically formed into digests by the 
-NaviTweet server and then sent to driver's mobile device for playback. Their 
-prototype implementation uses OpenStreetMap for mapping data, Google Map for VSN 
-management and Android speech recognition.
+same destination). Voice tweets are formed into digests by the 
+NaviTweet server and then sent to driver's mobile device for playback.
+Whilst the audio nature of the tweets 
+was intended to reduce cognitive overload, audience questions highlighted the 
+potential for background noise to make interpretation challenging and even for 
+the opportunity for transmission of negative, `road rage', messages.
 
 The final paper, ``Quantifying the Potential of Ride-Sharing using Call 
 Description Records'', was presented by Blerim Cici (University of California). 
-In this work, the authors attempt to quantify the upper bound on ride-sharing 
-effectiveness by considering human mobility patterns in Madrid, Spain, using a
-3-month call description record (CDR) dataset. The authors assumed each traveller 
-had a car capacity of four and by matched users whose home and work locations 
-were close to each other.
+The work attempts to quantify the upper bound on ride-sharing 
+by considering human mobility patterns using a 
+3-month call description record (CDR) dataset.
+By permitting short detours to pickup\slash drop-off,
+analysis shows that ride-sharing has the potential to eliminate ~50\% of car 
+journeys. Discussion following the presentation focussed on 
+incentives to share (\eg{} using social graphs), increasing opportunity by 
+allowing passengers divide their route between cars, and opportunities for 
+analysing CDRs to improve public transportation.

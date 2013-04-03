@@ -1,1 +1,1 @@
-texcount -inc hotmobile13-report.tex
+texcount -inc -brief -sum hotmobile13-report.tex
