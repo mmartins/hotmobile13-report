@@ -1,46 +1,41 @@
 %!TEX root = ../hotmobile13-report.tex
 \section{Power Management}
 \label{sec:power}
-This session, chaired by Nigel Davies (Lancaster University),
-began with ``How is Energy Consumed in Smartphone Display Applications?''. 
-Presented by Mian Dong (Samsung Telecommunication America), the work explored
-the power consumption of smartphone AMOLED screens. Their first 
-research question focused on improvements to AMOLED screens over time
-%(\eg{} the Super AMOLED on the Nexus S [2010] vs. the HD Super AMOlED Plus on 
-%the Galaxy S III [2012])
+The session %(chaired by Nigel Davies, Lancaster University)
+opened with
+``How is Energy Consumed in Smartphone Display Applications?'' presented by Mian Dong (Samsung Telecommunication America). The work explored
+the power consumption of smartphone AMOLED screens through two research questions: the first focused on improvements to AMOLEDs over time
 and found that the practical power improvement is relatively low.
-%(between 6\% and 30\% in the best conditions)
-A second study focused on 
-producing a power analysis for the display in an applications context. For three 
-sample applications: video, gameplay, and camera, the display was found to be a 
-relatively small contributor to power consumption. However, some content may lead 
-to very high power consumption which could be reduced using colour 
+The second question focused on 
+producing a power analysis for the display in an application context. For three 
+sample applications (video, gameplay, camera), the display was found to be a 
+relatively small contributor to power consumption. However, some content can result in high power consumption, which may be reduced using colour 
 transformation (\eg{} reducing brightness, increasing saturation).
 
 Mostafa Uddin (Old Dominion University) then presented ``A2PSM: Audio Assisted 
 Wi-Fi Power Saving Mechanism for Smart Devices''. Wi-Fi power saving mechanisms 
 (PSMs) are key for the extending the limited power resources of mobile devices. 
-A2PSM exploits lower-powered audio hardware (\eg{} microphone\slash speaker) to 
-improve existing PSMs (\eg{} static PSM) by reducing the need for `wake periods'. 
+A2PSM exploits lower-powered audio hardware to 
+improve existing PSMs by reducing the need for `wake periods'. 
 Evaluation of a smartphone prototype suggests A2PSM could offer in excess of 25\%
 improvement over SPSM with no impact on network throughput.
 
 The final paper of the session, ``Application Modes: A Narrow Interface for End-
 User Power Management in Mobile Devices'' was presented by Marcelo Martins (Brown 
-University). The work suggests `Application Modes' as a mechanism for allowing 
-the user to make power management decisions on their mobile device. Each 
+University). `Application Modes' are suggested as a mechanism for allowing 
+users to make power management decisions on their mobile device. Each 
 application can offer a number of modes that comprise of reductions of 
 functionality with associated power savings (\eg{} turn off automatic 
 synchronisation). Modes allow developers to provide graceful degradation of their 
 application in resource-constrained circumstances, and also allow the user to 
-prioritise the application they are using over less-important ones.
+prioritise an in-use application over background applications.
 
-Much of the discussion at the close of this session was focused around the idea
-that perhaps mobile computing is reaching a point where all the easy 
-optimisations are gone such that further energy improvements must impact the 
-user. Offloading power management to the user is difficult and the user is 
-unlikely to know which applications are draining their battery. Motivating 
-developers to conserve energy and raising awareness of application energy use 
-could be an area for future work. %Users could potentially balance energy (and 
+At the close of this session, discussion focused around the idea
+that mobile computing has potentially reached a point where all easy 
+optimisations are gone; further energy improvements must impact the 
+user. Offloading decisions to the user is difficult and it is difficult to 
+know which applications are draining battery. Motivating 
+developers to conserve energy, and raising awareness of application energy use, 
+could be targeted in future work. %Users could potentially balance energy (and 
 %other costs) against the initial cost of an application to calculate which 
 %applications were truly the most explsnive.
