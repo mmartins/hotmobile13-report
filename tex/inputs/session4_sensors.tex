@@ -1,3 +1,48 @@
 %!TEX root = ../hotmobile13-report.tex
 \section{Sensors and Data}
 \label{sec:sensors}
+
+\remark{Add cloudlet reference or not?}
+
+Yu Xiao (CMU/Aalto University) started her talk, ``Lowering the Barriers
+to Large-Scale Mobile Crowdsensing'', by listing the main obstacles to
+successful scaling collaborative sensing on mobile devices: device
+heterogeneity, lack of user incentives and high communication cost. She
+urged the community to rethink the deployment model for this type of
+applications and suggested a three-tier architecture to ease scaling.
+She proposed the use of a middle layer between mobile clients and app
+server, named \emph{cloudlets}. Xiao demystified cloudlets as a
+distributed infrastructure for running VMs, physically close to the
+mobile client to reduce networking costs. Cloudlets comprise a set of
+proxy VMs, which abstract device heterogeneity and handle requests of
+sensor data on behalf of mobile clients, and application VMs, which
+decentralize application logic and data aggregation. She explained that
+the app server manages the transfer of VMs between cloudlets according
+to the user's position, to guarantee both low latency and logic
+offloading. She concluded her presentation with some of the technical
+challenges which require careful examination: virtualization overhead
+and cloudlet reconfiguration resultant from VM migration.
+
+Waylon Brunnete (University of Washington) followed with ``Open Data Kit
+2.0: Expanding and Refining Information Services for Developing
+Regions''. Brunnette elaborated on the success of Open Data
+Kit~\footnote{\url{http://opendatakit.org}} (ODK) 1.0 as a modular
+toolkit for building mobile applications mainly used for data collection
+and aggregation in developing regions. From the feedback received from
+various developers worldwide, Brunnette iterated over the drawbacks of
+ODK 1.0 and completed his talk by explaining how his team at UW fixed
+these shortcomings on ODK 2.0 and enabled the creation of more complex
+applications.
+
+%in special the adoption of databases
+%instead of forms to enable editing of collected data, preference of
+%runtime languages over compiled ones to modify apps without recompiling
+%and support for more built-in and external sensors to collect data from
+%various sources.
+
+Supriyo Chakraborty of UCLA concluded the session with ``A
+Framework for Context-Aware Privacy of Sensor Data on Mobile Devices'',
+a study on the tradeoff between application utility and shared-data
+privacy.
+
+\remark{TODO: Finish this.}
