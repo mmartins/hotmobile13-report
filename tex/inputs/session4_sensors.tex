@@ -2,16 +2,15 @@
 \section{Sensors and Data}
 \label{sec:sensors}
 
-\remark{Add cloudlet reference or not?}
-
-Yu Xiao (CMU/Aalto University) started her talk, ``Lowering the Barriers
-to Large-Scale Mobile Crowdsensing'', by listing the main obstacles to
-successful scaling collaborative sensing on mobile devices: device
-heterogeneity, lack of user incentives and high communication cost. She
-urged the community to rethink the deployment model for this type of
-applications and suggested a three-tier architecture to ease scaling.
-She proposed the use of a middle layer between mobile clients and app
-server, named \emph{cloudlets}. Xiao demystified cloudlets as a
+Rajesh Krishna Balan (Singapore Management University) chaired the
+session. Yu Xiao (CMU/Aalto University) started her talk, ``Lowering the
+Barriers to Large-Scale Mobile Crowdsensing'', by listing the main
+obstacles to successful scaling collaborative sensing on mobile devices:
+device heterogeneity, lack of user incentives and high communication
+cost. She urged the community to rethink the deployment model for this
+type of applications and suggested a three-tier architecture to ease
+scaling.  She proposed the use of a middle layer between mobile clients
+and app server, named \emph{cloudlets}. Xiao demystified cloudlets as a
 distributed infrastructure for running VMs, physically close to the
 mobile client to reduce networking costs. Cloudlets comprise a set of
 proxy VMs, which abstract device heterogeneity and handle requests of
@@ -40,9 +39,19 @@ applications.
 %and support for more built-in and external sensors to collect data from
 %various sources.
 
-Supriyo Chakraborty of UCLA concluded the session with ``A
+Supriyo Chakraborty (UCLA) concluded the session with ``A
 Framework for Context-Aware Privacy of Sensor Data on Mobile Devices'',
 a study on the tradeoff between application utility and shared-data
-privacy.
+privacy. Chakraborty argued about the risk of disclosure of sensitive
+information by untrusted apps via inferences on shared personal
+data. To preserve data anonymity and avoid reconstruction, the presenter
+supported the idea of presenting shared data on a lower-dimensional
+space using transformation functions and obfuscating data by sharing only
+what is explicitly vetted by the user. Chakraborty finished his talk
+by describing \emph{ipShield}, an inference privacy framework
+implemented atop Android that infers the adversary capability of
+extracting sensitive information from shared data, and provides a
+firewall for coping with data-sharing filters for apps and data
+obfuscation rules by users.
 
-\remark{TODO: Finish this.}
+\remark{TODO: Add discussion.}
