@@ -12,23 +12,23 @@ human properties, \eg, preferential content pre-fetching and vehicle
 driving with cognitive comfort. Bao concluded his talk by mentioning
 some of the remaining challenges for enabling psychological computing.
 These include how to model attributes correctly, and in case of wrong
-prediction, how to back off graciously.
+prediction, how to back off gracefully.
 
 He Wang (Duke University) followed with ``Recognizing Humans without Face
 Recognition'', a presentation of the \emph{InSight} system for human
-identification using camera-enabled portable devices in situations where
-computer vision cannot work with face patterns. Wang found that
+identification using camera-enabled portable devices in situations when
+computer vision cannot distinguish face patterns. Wang found that
 applying spectogram analysis to cloth colors and wavelets to cloth
 patterns are prominent techniques for accurately recognizing humans from
-their garments. InSight shares these fingerprints with other people's
+their garments. InSight can share these fingerprints with other people's
 devices to enable social-aware applications.
 
 Shahriar Nirjon (University of Virgina) presented the last paper of
 the session, ``sMFCC: Exploiting Sparseness in Speech for Fast Acoustic
 Feature Extraction on Mobile Devices -- a Feasibility Study''. Nirjon
 noted that current solutions for voice-driven smartphone applications
-must offload the extraction of acoustic features to the cloud to
-guarantee near real-time system response, despite a high communication
+must offload the extraction of smartphone audio features to the cloud to
+guarantee real-time system response, which leads to high communication
 cost. After empirically observing the sparseness of frequency domain in
 speech, Nirjon proposed sMFCC (sparse Mel-Frequency Cepstral
 Coefficients) to exploit this property and enable in-situ, fast
@@ -37,12 +37,3 @@ sMFCC on top of recent work on sparse Fast Fourier Transform (sFFT) as
 an efficient approximation to the widely used MFCC algorithm. He showed
 that sMFCC can achieve an accuracy of up to $83.97\%$ on word
 recognition with a low expected response time.
-
-The discussion session
-\remark{
-  \textbf{TODO}:
-  \begin{itemize}
-  \item Need for sFFT reference?
-  \item Add Discussion session.
-  \end{itemize}
-}
