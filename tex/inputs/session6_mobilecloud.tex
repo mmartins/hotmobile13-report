@@ -23,14 +23,14 @@ with both data and computation states preserved. He explained that VMsync
 aims for minimal user-perceived delay during switching by incrementally
 transferring checkpoints from one active VM on one device to other
 devices. For the rest of his talk, Bickford analysed different
-synchronization policies for representative multimedia mobile workloads.
+synchronisation policies for representative multimedia mobile workloads.
 He observed that sending deltas between checkpoints decreases the
-synchronization latency, and although increasing the checkpoint interval
+synchronisation latency, and although increasing the checkpoint interval
 can help reduce memory and file-system delta sizes, such approach may
 risk the promised seamlessness in user experience.
 
 Michael Butkiewicz (UC Riverside) completed the roster with ``Enabling
-the Transition to the Mobile Web with WebSieve'', a study on optimizing
+the Transition to the Mobile Web with WebSieve'', a study on optimising
 the load time of websites in mobile devices. Butkiewicz bases his work
 on the observation that a great number of popular websites do
 not provide an equivalent mobile-friendly version, resulting in high
@@ -40,6 +40,6 @@ web objects on a page and, given a loading-time constraint, load only
 those objects that have the highest value to the user. Based on user
 surveys, Butkiewicz discovered that different users perceive different
 utilities for the same set of objects, hence WebSieve necessitates
-personalization.  Finally, he described his prototype design as an
-optimization-problem solver over an object-dependency graph and covered
+personalisation.  Finally, he described his prototype design as an
+optimisation-problem solver over an object-dependency graph and covered
 some of the non-trivial research questions WebSieve brings about.
