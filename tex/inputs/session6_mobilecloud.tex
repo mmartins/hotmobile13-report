@@ -4,7 +4,8 @@
 
 The session, chaired by Matt Welsh (Google), opened with Lars Tiede
 (University of Tromsø) presenting ``Cloud Displays for Mobile Users in a
-Display Cloud''. Tiede introduced the cloud display, an abstraction for
+Display Cloud''~\cite{tiede13}. Tiede introduced the cloud display, an
+abstraction for
 public, shared programmable displays which can be discovered, composed
 and configured by mobile devices. Visual output comes from
 applications running on desktop computers, whilst mobile devices serve as
@@ -17,8 +18,9 @@ technology.
 
 Jeffrey Bickford (AT\&T Security Research Center) followed with
 ``Towards Synchronization of Live Virtual Machines among Mobile
-Devices''. His presentation focused on the design of \emph{VMsync}, a
-service to enable users to switch seamlessly between mobile devices
+Devices''~\cite{bickford13}. His presentation focused on the design of
+\emph{VMsync}, a service to enable users to switch seamlessly between
+mobile devices
 with both data and computation states preserved. He explained that VMsync
 aims for minimal user-perceived delay during switching by incrementally
 transferring checkpoints from one active VM on one device to other
@@ -30,13 +32,14 @@ can help reduce memory and file-system delta sizes, such approach may
 risk the promised seamlessness in user experience.
 
 Michael Butkiewicz (UC Riverside) completed the roster with ``Enabling
-the Transition to the Mobile Web with WebSieve'', a study on optimising
+the Transition to the Mobile Web with WebSieve''~\cite{butkiewicz13}, a
+study on optimising
 the load time of websites in mobile devices. Butkiewicz based his work
 on the observation that a great number of popular websites do
 not provide an equivalent mobile-friendly version, resulting in high
 load times and user-experience deterioration. He proposed
 \emph{WebSieve}, an architecture to estimate the user-perceived value of
-web objects on a page and, given a loading-time constraint, only load 
+web objects on a page, and, given a loading-time constraint, only load 
 those objects that have the highest value to the user. Based on user
 surveys, Butkiewicz discovered that different users perceive different
 utilities for the same set of objects, hence WebSieve necessitates
@@ -45,7 +48,7 @@ optimisation-problem solver over a dependency graph and covered
 some of the non-trivial research questions WebSieve brings about.
 
 The discussion session started with a hot debate between advocates and
-skeptics on the applicability and usefulness of programmable displays.
+skeptics of the applicability and usefulness of programmable displays.
 While the supporters pointed to public scenarios where displays can be
 useful, a few contenders still speculate on the ``killer
 app''. The second part of the discussion concentrated on the
